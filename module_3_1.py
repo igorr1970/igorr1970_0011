@@ -24,5 +24,4 @@ print(string_info('Armageddon'))
 print(is_contains('Urban', ['ban', 'BaNaN', 'urBAN']))
 print(is_contains('cycle', ['recycling', 'cyclic']))
 
-print(calls)  
-
+print(calls)
