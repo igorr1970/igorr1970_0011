@@ -3,29 +3,23 @@
 def print_params(a = 1, b = 'строка', c = True):
     print(a, b, c)
 
-# Вызовы функции с разным количеством аргументов
-print_params()  # Без аргументов
-print_params(10)  # Один аргумент
-print_params(10, 'новая строка')  # Два аргумента
-print_params(b = 25)  # Изменяем только b
-print_params(c = [1, 2, 3])  # Изменяем только c
+print_params()
+print_params(10)
+print_params(10, 'новая строка')
+print_params(b = 25)
+print_params(c = [1, 2, 3])
 
 # 2.Распаковка параметров:
 
-# Список значений
 values_list = [3.14, 'пример', False]
 
-# Словарь значений
 values_dict = {'a': 42, 'b': 'тест', 'c': None}
 
-# Вызов функции с распаковкой параметров
-print_params(*values_list)  # Распаковка списка
-print_params(**values_dict)  # Распаковка словаря
+print_params(*values_list)
+print_params(**values_dict)
 
 # 3.Распаковка + отдельные параметры:
 
-# Второй список значений
 values_list_2 = [54.32, 'Строка']
 
-# Вызов функции с распаковкой и дополнительным параметром
 print_params(*values_list_2, 42)
